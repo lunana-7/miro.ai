@@ -1,35 +1,35 @@
-# MirrorAI 终端启动最简步骤
+# MirrorAI Minimal Terminal Startup Guide
 
-只保留关键运行命令。
+Only the essential run commands are included.
 
-## 手动分开 3 个终端
+## Open 3 Separate Terminals Manually
 
-### 终端 1：StorySage 后端
+### Terminal 1: StorySage Backend
 
 ```powershell
 cd d:\Projects\mirrorai\StorySage
 conda run -n storysage python src/main.py --mode server --port 8000
 ```
 
-### 终端 2：MiroFish 后端
+### Terminal 2: MiroFish Backend
 
 ```powershell
 cd d:\Projects\mirrorai\MiroFish
 npm run backend
 ```
 
-### 终端 3：StorySage 前端
+### Terminal 3: StorySage Frontend
 
 ```powershell
 cd d:\Projects\mirrorai\StorySage_Frontend
 npm run dev
 ```
 
-## 打开网页
+## Open the Web App
 
-- 前端主页：`http://localhost:5173/`
+- Frontend home: `http://localhost:5173/`
 
-登录后在首页点击：
+After login, click on the home page:
 - `Generate MiroFish Graph`
 - `View Graph`
 
